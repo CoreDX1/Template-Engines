@@ -1,4 +1,4 @@
-.container{
+.contenedor{
   background-color: #3B4252;
   max-width: 800px;
   margin: auto;
@@ -22,23 +22,23 @@
   text-align: center;
   display: block;
 }
-.container a{
+.contenedor a{
   color: white;
 }
-.container .title{
+.contenedor .title{
   font-size: 50px;
   color: white;
   text-align: center;
 }
 
-.container .title_product{
+.contenedor .title_product{
   font-size: 35px;
   width: 100%;
   display: block;
   top: 0;
 }
 
-.container .image{
+.contenedor .image{
   width: 90px;
   height: auto;
   color: blue;
@@ -47,23 +47,21 @@
   border: 1px white solid;
 
 }
-.container .baseNombre{
+.contenedor .baseNombre{
   display: flex;
   justify-content: center;
 }
-.container .bloque{
+.contenedor .bloque{
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   width: 100%;
   text-align: center;
   border: solid white 1px;
   margin-right: 40px;
 }
-.container .bloque .arry{
+.contenedor .bloque .arry{
   color: white;
-  font-size: 25px;
   padding: 20px;
   display: block;
   border: solid 1px white;
