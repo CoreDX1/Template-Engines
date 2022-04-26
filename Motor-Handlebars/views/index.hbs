@@ -1,0 +1,38 @@
+{{#if isDisplayLength}}
+  <h2 class="mensaje">No hay productos</h2>
+  <a href="/form" class="form">Agregar Productos</a>
+{{else}}
+  <div class="container">
+    <h1 class="title">Producto</h1>
+    <ul class="main">
+      <div class="baseNombre">
+        <div class="bloque">
+          <a class="title_product">Nombre</a>
+          <br>
+          {{#each data}}
+            <a class="arry">{{this.name}}</a>
+            <br>
+          {{/each}}
+        </div>
+        <div class="bloque">
+          <a class="title_product">Precio</a>
+          <br>
+          {{#each data}}
+            <a class="arry">${{this.price}}</a>
+          <br>
+          {{/each}}
+        </div>
+        <div class="bloque">
+          <a class="title_product">Foto</a>
+          {{!-- Agregar --}}
+          <br>
+          {{#each data}}
+            <img src="{{this.image}}" alt="" class="image">
+          {{/each}}
+          <br>
+        </div>
+      </div>
+    </ul>
+    <a href="/form" class="form">Agregar producto</a>
+  </div>
+{{/if}}

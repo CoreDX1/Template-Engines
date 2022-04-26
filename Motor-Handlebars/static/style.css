@@ -1,0 +1,72 @@
+.container{
+  background-color: #3B4252;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+}
+.mensaje{
+  background-color: #3B4252;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  height: 200px;
+  font-size: 40px;
+}
+.form{
+  text-align: center;
+  display: block;
+}
+.container a{
+  color: white;
+}
+.container .title{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.container .title_product{
+  font-size: 35px;
+  width: 100%;
+  display: block;
+  top: 0;
+}
+
+.container .image{
+  width: 90px;
+  height: auto;
+  color: blue;
+  padding: 10px;
+  display: block;
+  border: 1px white solid;
+
+}
+.container .baseNombre{
+  display: flex;
+  justify-content: center;
+}
+.container .bloque{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  border: solid white 1px;
+  margin-right: 40px;
+}
+.container .bloque .arry{
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  display: block;
+  border: solid 1px white;
+  width: 190px;
+  
+}

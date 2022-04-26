@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+  </head>
+  <body>
+    <% if (data.length <= 0) { %>
+      <h2 class="mensaje">No hay productos</h2>
+      <a href="/form" class="form">Agregar Productos</a>
+    <% }else {%>
+      <div class="container">
+        <h1 class="title">Producto</h1>
+        <ul class="main">
+          <div class="baseNombre">
+            <div class="bloque">
+              <a class="title_product">Nombre</a>
+              <br>
+              <% data.forEach((pr) => {%>
+              <a class="arry"><%= pr.name %></a>
+              <br>
+              <% })%>
+            </div>
+            <div class="bloque">
+              <a class="title_product">Precio</a>
+              <br>
+              <% data.forEach((pr) => {%>
+              <a class="arry"><%= `$${pr.price}` %></a>
+              <br>
+              <% })%>
+            </div>
+            <div class="bloque">
+              <a class="title_product">Foto</a>
+              <br>
+              <% data.forEach((pr) => {%>
+              <img src="<%= pr.image %>" alt="" class="image">
+              <br>
+              <% })%>
+            </div>
+          </div>
+        </ul>
+        <a href="/form" class="form">Agregar producto</a>
+      </div>
+    <%} %>
+  </body>
+</html>

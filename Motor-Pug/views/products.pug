@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/style.css")
+        title Document
+    body 
+        div
+            if valor
+                h2.mensaje No hay Productos
+                a.form(href="/form") Agregar Productos
+            else
+                div.container    
+                    h1.title Productos
+                    ul.main
+                        div.baseNombre
+                            div.bloque
+                                a.title_product Nombre
+                                br
+                                each pr in data
+                                    a.arry= pr.name
+                                    br
+                            div.bloque  
+                                a.title_product Price
+                                br
+                                each pr in data
+                                    a.arry= pr.price
+                                    br
+                            div.bloque         
+                                a.title_product Fotos
+                                br
+                                each pr in data
+                                    img.image(src=`${pr.image}`, alt="")
+                                    br
+                    a(href="/form") Agregar Productos
